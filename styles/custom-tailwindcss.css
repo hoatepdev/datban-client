@@ -1,0 +1,112 @@
+/* @import "tailwindcss"; */
+
+.from-cl-1 {
+  --tw-gradient-from: #8770ff var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(135, 112, 255, 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-cl-5 {
+  --tw-gradient-to: #ff7eda var(--tw-gradient-to-position);
+}
+
+.transition-transform-colors-opacity {
+  transition-property: transform, color, background, background-color,
+    border-color, text-decoration-color, fill, stroke, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.25s;
+}
+.tap-highlight-transparent {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+.subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-medium {
+  font-size: var(--heroui-font-size-medium);
+  line-height: var(--heroui-line-height-medium);
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.to-primary-2 {
+  --tw-gradient-to: #fe9788 var(--tw-gradient-to-position);
+}
+.from-primary-3 {
+  --tw-gradient-from: #ff7eda var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(255, 126, 218, 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.bg-default {
+  --tw-bg-opacity: 1;
+  background-color: hsl(
+    var(--heroui-default) / var(--heroui-default-opacity, var(--tw-bg-opacity))
+  );
+}
+.rounded-large {
+  border-radius: var(--heroui-radius-large);
+}
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.min-w-24 {
+  min-width: 6rem;
+}
+.w-\[130px\] {
+  width: 130px;
+}
+.h-12 {
+  height: 3rem;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.box-border {
+  box-sizing: border-box;
+}
+.z-0 {
+  z-index: 0;
+}
+.relative {
+  position: relative;
+}

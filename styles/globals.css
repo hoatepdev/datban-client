@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 346.8 77.2% 49.8%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 346.8 77.2% 49.8%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    /* custom */
+    --cl-1: #8770ff;
+    --cl-1-hv: #7d66f5;
+    --cl-2: #f89aff;
+    --cl-3: #e8e3ff;
+    --cl-4: #ffe5e5;
+    --cl-5: #ff7eda;
+    --cl-bg: #f8f4fe;
+    --cl-primary: #8770ff;
+    --cl-secondary: #fe9788;
+    --cl-bg-icon: #eae8fe;
+    --cl-bg-gray: #3a5068;
+    --color-primary: #ff7eda;
+    --color-primary-2: #fe9788;
+    --color-secondary: #fe9788;
+    --color-text-primary: #333;
+    --color-text-secondary: #898a8d;
+    --color-text-third: #2192ff;
+    --color-text-fourth: #47b5ff;
+    --color-bg: #fff;
+    --color-bg-primary: #f5f6fa;
+    --color-bg-icon: #e4e6eb;
+    --color-bg-hover: #fcfbdc;
+    --color-error: #e61414;
+    --color-shadow: #0f172a;
+    --color-line: #ddd;
+    --color-fur: #ffb141;
+    --color-fur-dark: #f5832c;
+    --color-spot: #f9584c;
+    --color-snout: #544258;
+    --color-collar: #3eab6c;
+    --duration: 0.7s;
+    --semi-duration: calc(var(--duration) / 2);
+    --easing: cubic-bezier(0.5, 0, 0.5, 1);
+    --stagger: calc(-1 * var(--semi-duration) / 2);
+    --progress-width: 0;
+    --buffered-width: 0;
+    --flame-gradient: linear-gradient(
+      45deg,
+      #ecf78c,
+      #fcdc73,
+      #ffb350,
+      #f14f0f
+    );
+    --flame-blur: 20px;
+    --to-mun: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+/* html set default font size */
+html {
+  font-size: 14px;
+}
+
+/* scrollbar */
+/* ::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642bff, #ff22e6);
+  border-radius: 10px;
+} */
+
+/* autofill input */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
