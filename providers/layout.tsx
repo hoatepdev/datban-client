@@ -7,7 +7,7 @@ const LayoutProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="relative">
       <Header />
-      <div className="mt-[100px]">{children}</div>
+      <div className="">{children}</div>
       <div className="block md:hidden">
         <Nav />
       </div>

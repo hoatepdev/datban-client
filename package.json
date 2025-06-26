@@ -2,7 +2,6 @@
   "name": "hanoi-coffee-client",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "start:dev": "next dev -p 4080",
     "build": "next build",
@@ -29,6 +28,7 @@
     "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.19.1",
     "js-cookie": "^3.0.5",
     "localforage": "^1.10.0",
     "lucide-react": "^0.453.0",

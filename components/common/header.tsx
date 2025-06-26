@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../home/header/logo";
 
 const Header = () => {
   return (
