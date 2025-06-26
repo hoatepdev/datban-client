@@ -29,7 +29,7 @@ const fadeInUp = {
 
 const HeroBanner = () => {
   return (
-    <section className="relative flex h-[80vh] min-h-[500px] w-full items-center bg-[url('/images/hero-banner/hero2.png')] bg-cover bg-center">
+    <section className="relative flex h-[80vh] min-h-[500px] w-full items-center bg-[url('/images/hero-banner/hero1.png')] bg-cover bg-center">
       <div className="relative z-20 mx-auto flex w-full max-w-7xl flex-col items-center px-4 md:flex-row md:items-center md:justify-between">
         <div className="w-full max-w-2xl flex-1 text-center md:text-left">
           <motion.h1
